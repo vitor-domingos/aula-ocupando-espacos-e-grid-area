@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+padding: 0;
+}
+
+.cabecalho {
+  background-color: aquamarine;
+}
+
+.menu {
+  background-color: cornflowerblue;
+}
+
+.secao-principal {
+  background-color: hotpink;
+}
+
+.aside {
+  background-color: orangered;
+}
+
+.rodape {
+  background-color: green;
+}
+
+.container {
+  display: grid;
+  /* grid-template-areas:"header header header"
+"menu principal-section aside" */
+
+  grid:
+    "header header header" 
+    "menu section aside" 
+     / 50px auto 100px;
+}
+
+.cabecalho {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.secao-principal {
+  grid-area: section;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.rodape {
+  grid-area: footer;
+}
